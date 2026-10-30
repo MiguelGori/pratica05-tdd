@@ -1,1 +1,2 @@
-# pratica05-tdd
+echo "target/" > .gitignore
+```[cite: 11]
