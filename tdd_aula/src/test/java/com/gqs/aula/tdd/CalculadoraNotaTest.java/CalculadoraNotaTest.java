@@ -23,3 +23,9 @@ public class CalculadoraNotaTest {
         boolean aprovado = calc.isAprovado(20, 20, 20);
         assertTrue(aprovado);
     }
+    @Test
+    void deveEstarReprovadoQuandoNotaMenorQue60() {
+        CalculadoraNota calc = new CalculadoraNota();
+        boolean aprovado = calc.isAprovado(15, 15, 20);
+        assertFalse(aprovado);
+    }
