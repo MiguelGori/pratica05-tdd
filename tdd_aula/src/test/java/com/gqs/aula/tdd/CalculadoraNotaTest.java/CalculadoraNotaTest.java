@@ -17,3 +17,9 @@ public class CalculadoraNotaTest {
         double resultado = calc.calcularNotaFinal(10, 15, 25);
         assertEquals(50, resultado);
     }
+    @Test
+    void deveEstarAprovadoQuandoNotaMaiorOuIgualA60() {
+        CalculadoraNota calc = new CalculadoraNota();
+        boolean aprovado = calc.isAprovado(20, 20, 20);
+        assertTrue(aprovado);
+    }
